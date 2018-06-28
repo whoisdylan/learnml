@@ -18,9 +18,10 @@ for iter = 1:num_iters
     %
 
 
-
-
-
+		% theta[n,1], X[m,n]
+		h = X*theta; % h[m,1]
+		hDifference = h - y;
+		theta = theta - (alpha/m)*(X'*hDifference);
 
 
     % ============================================================

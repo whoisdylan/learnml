@@ -14,6 +14,9 @@ J = 0;
 %               You should set J to the cost.
 
 
+h = X*theta;
+hDifference = h - y;
+J = (1/(2*m))*sum(hDifference.^2);
 
 
 
