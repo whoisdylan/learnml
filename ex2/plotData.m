@@ -12,13 +12,13 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
-
-
-
-
-
-
-
+positiveSamples = X(y == 1, :);
+negativeSamples = X(y == 0, :);
+plot(positiveSamples(:,1), positiveSamples(:,2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
+plot(negativeSamples(:,1), negativeSamples(:,2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
+xlabel('Exam 1 score');
+ylabel('Exam 2 score');
+legend();
 
 % =========================================================================
 
